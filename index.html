@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Shoping List</title>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src ="script.js"></script>
+        <script type="text/javascript" src="add.js"></script>
+       
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
@@ -14,13 +14,13 @@
 
         <form action="add" method="get">
             <label>Add Item: </label>
-            <input type="text" name="item">
+            <input type="text" name="item" id="entered_Value">
             <input id="addNeed" type="submit" value="Need">
             <input id="addHave" type="submit" value = "Have">
         </form>
 
         <h2>Need: </h2>
-        <ul class="list">
+        <ul class="list" id="needed_list">
             <li><input type="checkbox" name="item"> Milk <a href="#">&#10006;</a></li>
             <li><input type="checkbox" name="item"> Eggs <a href="#">&#10006;</a></li>
             <li><input type="checkbox" name="item"> Kitchen <a href="#">&#10006;</a></li>
@@ -28,7 +28,7 @@
         </ul>
 
         <h3>Have: </h3>
-        <ul class="list">
+        <ul class="list" id="have_list">
             <li><input type="checkbox" name="item"> Steak <a href="#">&#10006;</a></li>
             <li><input type="checkbox" name="item"> Cream <a href="#">&#10006;</a></li>
             <li><input type="checkbox" name="item"> Cheese <a href="#">&#10006;</a></li>
